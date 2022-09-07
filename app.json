@@ -3,7 +3,6 @@
     "name": "training-timer",
     "slug": "training-timer",
     "version": "1.0.0",
-    "sdkVersion": "45.0.0",
     "assetBundlePatterns": [
       "**/*"
     ],
@@ -11,6 +10,9 @@
       "eas": {
         "projectId": "6189a2c6-fcd9-4955-9d47-4e20a914aa3f"
       }
+    },
+    "android": {
+      "package": "com.lucasandria.trainingtimer"
     }
   },
   "name": "training-timer",

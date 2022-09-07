@@ -12,10 +12,10 @@ const Title = () => {
 const styles = StyleSheet.create({
     titre_container: {
         backgroundColor: '#0AAFF1',
-        height: 100,
+        height: 120,
         width: "100%",
         alignItems: 'center',
-        marginBottom: 0
+        marginBottom: 50
     },
     titre: {
         marginTop: 40,

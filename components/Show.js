@@ -24,14 +24,14 @@ const Show = ({ txt, time, stop, stopStart, pre, funcStop, playSound, stopSound,
 
     return (
         <View style={styles.container}>
-            <ImageBackground source={bgImage} resizeMode="fixed" style={styles.image}>
+            <ImageBackground source={bgImage} style={styles.image}>
                 {/* {pre && <Text>Ilay à vos marques (3, 2, 1)</Text>} */}
                 <View style={styles.contenair_main}>
                     <Text style={styles.main_text}>{txt}</Text>
                     <Text style={styles.time}>{convertTime(time)}</Text>
                 </View>
                 <View style={styles.button}>
-                    <Button disabled={pre ? true : false} title={stop ? '▶' : '⏸'} onPress={pausePlay} />
+                    <Button disabled={pre ? true : false} title={stop ? '▶' : '||'} onPress={pausePlay} />
                 </View>
                 <View style={styles.button}>
                     <Button disabled={quitable ? false : true} title='RETOUR' onPress={funcStop} />
@@ -54,7 +54,7 @@ const styles = StyleSheet.create({
 
     },
     time: {
-        fontSize: '200%',
+        fontSize: 20,
         fontWeight: 'bold',
 
     },
@@ -65,7 +65,6 @@ const styles = StyleSheet.create({
         width: '100%'
     },
     button: {
-        textSize: 50,
         marginTop: 20,
         width: 200,
     }
